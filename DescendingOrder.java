@@ -14,9 +14,17 @@ for(int num:a) {
 Arrays.sort(a);
 	System.out.println("The sorted arrays are ");
 	for(int num:a){
-		System.out.print(num+ " ");
+		System.out.println(num+ " ");
+	}
+	System.out.println("The descending arders  are ");
+
+	for(int i=a.length-1;i>=0;i--) {
+		
+		
+		System.out.println(a[i]);
+		
+	}
+	
 	}
 }
-	}
-
 
