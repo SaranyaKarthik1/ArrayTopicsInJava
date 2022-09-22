@@ -1,9 +1,9 @@
-package Assignments;
+
 
 public class CalculateNumber {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 int n=3238533;
 int temp=n%10;
 int count=0;
