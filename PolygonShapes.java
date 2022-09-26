@@ -1,13 +1,13 @@
 package Assignments;
 
-interface polygon{
+interface polygon1{
 	void getarea();
 	default void getsides(){
 		System.out.println("I can get sides of the polygon");
 	}
 }
 
- class Rectangle implements polygon {
+ class Rectangl implements polygon1{
 
 	@Override
 	public void getarea() {
@@ -19,11 +19,11 @@ interface polygon{
 	}
 	 
  }
- class Square implements polygon{
+ class Square1 implements polygon1{
 	 public void getAreaSquare() {
 		 int length=2;
 		 int  area=length*length;
-		 System.out.println("The area of square is "+area);
+		 System.out.println("The area of square is: "+area);
 	 }
 
 	@Override
@@ -38,10 +38,10 @@ public class PolygonShapes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Rectangle rect=new Rectangle();
+		Rectangl rect=new Rectangl();
 		rect.getarea();
 		
-		Square shape=new Square();
+		Square1 shape=new Square1();
 		
 		shape.getAreaSquare();
 		shape.getarea();
