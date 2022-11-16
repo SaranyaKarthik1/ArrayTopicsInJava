@@ -1,0 +1,28 @@
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+      char c[]=s.toCharArray();
+        String longest=null;
+        int n=0;
+        LinkedHashMap<Character,Integer> m=new LinkedHashMap<>();
+        for(int i=0;i<c.length;i++){
+            char ch=c[i];
+            if(!m.containsKey(ch)){
+                m.put(ch,i);
+            }
+            else {
+                i=m.get(ch);
+                m.clear();
+            }
+            if(m.size()>n){
+                 n=m.size();
+                longest =m.keySet().toString();
+            }
+               
+           
+        }
+            return n;
+        
+
+        
+    }
+}
